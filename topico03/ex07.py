@@ -1,0 +1,14 @@
+# Faça um programa que faça a entrada de um texto. 
+# Se for um e-mail, retorne "E-mail válido", caso contrário,
+# retorne "E-mail inválido". Para tanto, verifique se o texto
+# possui o símbolo @
+
+email = input("Digite um email válido: ")
+
+while True:
+    if "@" in email:
+        print("E-mail válido")
+        break
+    else:
+        print("E-mail inválido")
+        email = input("Digite um email válido: ")
